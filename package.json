@@ -1,0 +1,19 @@
+{
+  "name": "production_ch_anokha23",
+  "version": "1.0.0",
+  "description": "production version of CH event server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase": "^9.20.0",
+    "sha1": "^1.1.1"
+  }
+}
