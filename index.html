@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit hunt</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "headingOne" >
+        <p style="margin: auto;">Circuit Hunt</p>
+    </div>
+    <div class="types"> 
+    
+    <p id="points" >Points</p>
+
+    <p id="type" >Question Type</p>
+    
+    </div>
+
+    <img id="question-image" src="https://www.galvinpower.org/wp-content/uploads/2022/09/open-and-closed-circuits.jpg"  class="imgDiv">
+
+    <div class="finText">
+        <p id="msg">Hurray!! You got Golden Question</p>
+    </div>
+    <script >
+        let points=document.getElementById("points")
+        let type=document.getElementById("type")
+        let questionimage = document.getElementById("question-image")
+        let msg=document.getElementById("msg")
+
+
+        const id = localStorage.getItem("user-id");
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('val');
+        if(id==null){
+        localStorage.setItem("user-id", "bac710e416fa7eca77cbd587113ac94be2690963");
+        }
+        else{
+          console.log(id)
+          console.log(myParam)
+          var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        
+        var raw = JSON.stringify({
+          "user_ID": id,
+          "QR_id_p":myParam
+        });
+        
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+        };
+        
+        fetch("http://192.168.246.1:3000/api", requestOptions)
+          .then(response => response.json())
+          .then(result =>{
+            let detail=result
+            console.log(result)
+            if(detail["qr_status"]=="1"){
+                questionimage.src=detail["Q_Link"]
+            
+            if(detail["Q_tot"]==3){
+                type.innerHTML="Golden Question"
+                points.innerHTML="5 pts"
+            }
+            else if(detail["Q_tot"]==5){
+                type.innerHTML="Normal Question"
+                points.innerHTML="3 pts"
+            }
+            else
+            {
+                type.innerHTML="Danger Question"
+                points.innerHTML="10 pts"
+            }
+
+          }
+        
+          else if(detail["qr_status"]=="2"){
+            msg.innerHTML="Oops!! You have already scanned this QR"
+          }
+          else if(detail["qr_status"]=="3"){
+            msg.innerHTML="Oops!! No more Hunt possible from this QR"
+          }
+          else{
+            msg.innerHTML="Oops!! something wrong"
+          }
+        }) 
+          .catch(error => console.log('error', error));
+        }
+        
+        //alert('jnd')  
+        //alert(id)
+        
+        
+            </script>
+</body>
+</html>

@@ -168,10 +168,13 @@ let qr_proxy2=
 
 
  
-
+app.use(express.static(__dirname + '/public'));
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+  app.get('/app',function(req,res){
+    res.sendFile(path.join(__dirname+'/index.html'));
+  })
   app.post('/api/adduser',async function(req,res){
 
     let user_num=req.body.user_num
@@ -189,10 +192,12 @@ app.listen(port, () => {
 
   })
   app.post('/api',async function(req,res){
-    
+    console.log('came')
     let User_ID=req.body.user_ID
+    console.log(User_ID)
     let qr_id_proxy=req.body.QR_id_p
     let qr_id = qr_proxy2.indexOf(qr_id_proxy);
+    console.log(qr_id)
 
     
     //let qr_id=qr_proxy[qr_id_proxy]

@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(183, 255, 231);
+    color: rgb(0, 91, 61);
+    font-family: 'Pathway Extreme', sans-serif;
+}
+.types{
+ font-size: 1.5rem;
+ font-weight: 600;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+
+}
+#question-image{
+    box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.265);
+    margin-top: 5rem;
+    width: 90%;
+}
+.headingOne
+{   font-size: 2.5rem;
+    font-weight: 700;
+    margin: auto;
+    width: 90%;
+    border-radius: 5%;
+    padding: 20px;
+    background-color:rgb(0, 226, 72);
+    text-align: center;
+}
+.imgDiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.finText
+{
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    text-align: center;
+    bottom: 5rem;
+    width: 100%;
+    font-style: italic;
+}
+.form{
+    border: 0px solid;
+    
+    margin-top: 10rem;
+   
+    font-size: 2rem;
+
+}
+.form p{
+    margin: auto;
+    width: fit-content;
+}
+.form input{
+    font-size: 2rem;
+    display: block;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    padding: 1rem 2rem;
+    width: 80%;
+    margin: auto;
+}
+.form button{
+    border: none;
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    width: 80%;
+    color: rgb(232, 255, 247);
+    font-size: 2rem;
+    background-color:rgb(0, 146, 98);
+    margin: auto;
+}
+.form button:hover {
+    background-color:rgb(0, 226, 72);
+}
