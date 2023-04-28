@@ -18,14 +18,14 @@
     
     <p id="points" >Points</p>
 
-    <p id="type" >Question Type</p>
+    <p id="type" >Question </p>
     
     </div>
 
-    <img id="question-image" src="https://www.galvinpower.org/wp-content/uploads/2022/09/open-and-closed-circuits.jpg"  class="imgDiv">
+    <img id="question-image" src="/Loading_icon.gif"  class="imgDiv">
 
     <div class="finText">
-        <p id="msg">Hurray!! You got Golden Question</p>
+        <p id="msg"></p>
     </div>
     <script >
         let points=document.getElementById("points")
@@ -229,38 +229,66 @@ else{
           redirect: 'follow'
         };
         
-        fetch("http://192.168.246.1:3000/api", requestOptions)
+        fetch("/api", requestOptions)
           .then(response => response.json())
           .then(result =>{
             let detail=result
             console.log(result)
+            
+           
             if(detail["qr_status"]=="1"){
                 questionimage.src=detail["Q_Link"]
+                msg.innerHTML="Hurray !! You got a Question"
             
-            if(detail["Q_tot"]==3){
+            if(detail["question-status"]=="2"){
+                questionimage.src=detail["Q_Link"]
+                msg.innerHTML="Ohh it seems you got an empty code"
+                type.innerHTML="No Question"
+                points.innerHTML="0 pts"
+            }
+            if(detail["question-status"]=='1'){
+            if(detail["Q_type"]==1){
+                type.innerHTML="Friendly Question"
+                points.innerHTML="3 pts"
+            }
+            else if(detail["Q_type"]==2){
                 type.innerHTML="Golden Question"
                 points.innerHTML="5 pts"
             }
-            else if(detail["Q_tot"]==5){
-                type.innerHTML="Normal Question"
-                points.innerHTML="3 pts"
+            else if(detail["Q_type"]==3){
+                type.innerHTML="Jocker Question"
+                points.innerHTML="+7/-1 pts"
+            }
+            else if(detail["Q_type"]==4){
+                type.innerHTML="Danger Question"
+                points.innerHTML="+10/-10 pts"
+            }
+            else if(detail["Q_type"]==5){
+                type.innerHTML="Jackpot Question"
+                points.innerHTML="5 pts"
             }
             else
             {
-                type.innerHTML="Danger Question"
-                points.innerHTML="10 pts"
+                type.innerHTML="Not Question"
+                points.innerHTML="0 pts"
             }
 
-          }
+          }}
         
           else if(detail["qr_status"]=="2"){
             msg.innerHTML="Oops!! You have already scanned this QR"
+            type.innerHTML="No Question"
+            points.innerHTML="0 pts"
           }
           else if(detail["qr_status"]=="3"){
             msg.innerHTML="Oops!! No more Hunt possible from this QR"
+            type.innerHTML="No Question"
+            points.innerHTML="0 pts"
           }
           else{
             msg.innerHTML="Oops!! something wrong"
+            type.innerHTML="No Question"
+            points.innerHTML="0 pts"
           }
         }) 
           .catch(error => console.log('error', error));

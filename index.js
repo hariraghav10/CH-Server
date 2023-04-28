@@ -40,7 +40,9 @@ const ap = initializeApp(firebaseConfig);
 }
 
 let qr_proxy2=
-[
+["start",
+
+//Friendly  
 "56d0d178-7059-464c-89ef-18589c78e974",
 "0ebe74df-dbab-421a-aae0-068ae01d6131",
 "966389f2-eeec-46d9-90de-648fc9eb99b5",
@@ -56,6 +58,8 @@ let qr_proxy2=
 "373aa7e3-44fc-48fd-9a74-9847e4ca1a87",
 "32b2ed72-f2c9-4d81-990b-1820701c6663",
 "81f11b39-ab39-40f8-8def-93b2f5aa40ea",
+
+//Golden
 "4e2d0c4c-7c52-4848-ae5c-4af4d2fdfecd",
 "8e7c7154-7da2-447a-b40f-4a1e86b7a9ca",
 "a50ed7b8-41f7-4a7a-8d81-0e8d848508ff",
@@ -66,6 +70,8 @@ let qr_proxy2=
 "91f0abf0-1004-4401-ab02-550ba6a680a2",
 "82e918ce-1265-4c59-8891-ef494965dab0",
 "0e296406-2c45-46e4-abf0-c4c6e2275a4b",
+
+//Joker
 "c6c5d813-ea70-4711-b122-939ab2e0a0ad",
 "d603bdd0-0892-47c7-8e65-e7979f0bf985",
 "bfd0a70b-17b3-40e1-942a-78e0631cdb94",
@@ -86,6 +92,8 @@ let qr_proxy2=
 "ee11b52a-fad0-4416-853b-1ec53e5d273b",
 "5a855026-9bc0-4e1e-b60a-1534b7c4cbd1",
 "32261c7b-9ad0-48b6-a7e0-7b841f748978",
+
+//Danger
 "085b9966-4c71-4c01-94d4-92d28bcacb61",
 "2b56249d-7c15-4da4-a7c5-409b41e54f43",
 "721b57ba-4264-40f4-80ec-7dfebad91ed4",
@@ -96,6 +104,32 @@ let qr_proxy2=
 "d0204e03-f8b6-4cb2-a91f-65016ee4307c",
 "a81d3b12-01c5-4be9-bc1f-a42413e3069e",
 "7667e35c-3dc2-415f-9651-27ee5d213d16",
+
+
+//empty starts
+//Jackpot
+"5e6658ee-5b4b-4b5e-94da-bcddc9e88d3d",
+"8a2094d9-6ea7-4d7b-ad7c-02baed739ab6",
+"90e494ca-b2ec-4ca9-9957-59cfcdb6a6fa",
+"eaca3681-1154-4512-8c95-da8cf1a14ac5",
+"75b1c108-3e67-499d-8373-fb1c3c03fed8",
+"3d0b1e50-fbdb-4ecb-b7e0-8a8414a71f98",
+"d688120f-0685-4470-b8b2-7df14b71efe6",
+"31030eac-bce2-4c30-8c8a-bed36c6c916a",
+"813dab33-1b35-4855-9855-e73942188528",
+"a9ac0885-5fb4-4ee7-a2ee-bfaf4bcf852e",
+"fc772c0a-ea38-46b3-881d-352e0cda87c6",
+"c5ce6599-79a0-447f-b943-7171f7118bf5",
+"e06a77cf-7b4c-48bb-bce0-f17fa34ff66a",
+"d244ffce-4412-45c4-9c1c-ec9f91fc7b38",
+"25cd8127-5bc9-4f77-86b6-1eac78dcb173",
+"42693654-8004-4db5-beb6-27728fee267f",
+"b901cf09-0bd1-47a9-8904-a6f7e1895f66",
+"f4132f93-0baf-417b-ad25-89cfedcfbc52",
+"0c5293bc-959e-4bd1-93fa-1696a6fdd441",
+"39815a83-e093-44a7-81f9-3c522accd59e",
+
+//Empty
 "dcc1e596-38c4-42f7-93f5-a1fc3a44e32a",
 "2d4d9508-7725-4910-90ef-01e22bf31bf5",
 "3024ed51-6254-4f55-a362-b1692ed07fc2",
@@ -111,6 +145,8 @@ let qr_proxy2=
 "70eb259e-efb3-4b83-820f-2890c2283c48",
 "0b8fa7d8-c91d-4715-a62d-20fb76b5a6b6",
 "b16337a9-68df-4b50-890d-6ab1b1f27646",
+
+//Funny
 "edc0422e-8223-4284-9d63-60c2d9202bb5",
 "5aaf6249-1859-418a-9424-bb3776d3dd99",
 "585dbbab-408c-4bc5-926a-2801dc7f36f1",
@@ -136,6 +172,8 @@ let qr_proxy2=
 "b8db2dae-4675-4bde-b756-076cbdf6a210",
 "43387e42-b13b-4b1e-bddc-53546881a47f",
 "14e6d78f-6d01-43c0-a8f7-a7a15019a62d",
+
+//Hints
 "12519e65-ee28-4348-b91e-5fa3ad23f639",
 "4ec75a2f-2572-4c8b-a731-eab87110daa2",
 "a2e7b055-df97-49f4-a807-4a827b952cfe",
@@ -150,31 +188,14 @@ let qr_proxy2=
 "c90fe17b-edc5-4daa-8658-f6e054673c5e",
 "77811e3b-cc0b-4de2-82ee-a1a5f81772a2",
 "cab63508-01aa-4a0d-a681-40348d26dc0a",
-"5556ae01-d2bb-4ad0-93e7-3c8781d59618",
-"5e6658ee-5b4b-4b5e-94da-bcddc9e88d3d",
-"8a2094d9-6ea7-4d7b-ad7c-02baed739ab6",
-"90e494ca-b2ec-4ca9-9957-59cfcdb6a6fa",
-"eaca3681-1154-4512-8c95-da8cf1a14ac5",
-"75b1c108-3e67-499d-8373-fb1c3c03fed8",
-"3d0b1e50-fbdb-4ecb-b7e0-8a8414a71f98",
-"d688120f-0685-4470-b8b2-7df14b71efe6",
-"31030eac-bce2-4c30-8c8a-bed36c6c916a",
-"813dab33-1b35-4855-9855-e73942188528",
-"a9ac0885-5fb4-4ee7-a2ee-bfaf4bcf852e",
-"fc772c0a-ea38-46b3-881d-352e0cda87c6",
-"c5ce6599-79a0-447f-b943-7171f7118bf5",
-"e06a77cf-7b4c-48bb-bce0-f17fa34ff66a",
-"d244ffce-4412-45c4-9c1c-ec9f91fc7b38",
-"25cd8127-5bc9-4f77-86b6-1eac78dcb173",
-"42693654-8004-4db5-beb6-27728fee267f",
-"b901cf09-0bd1-47a9-8904-a6f7e1895f66",
-"f4132f93-0baf-417b-ad25-89cfedcfbc52",
-"0c5293bc-959e-4bd1-93fa-1696a6fdd441",
-"39815a83-e093-44a7-81f9-3c522accd59e"
+"5556ae01-d2bb-4ad0-93e7-3c8781d59618"
+
+
+
 ]
 
 /*
-[
+[ Friendly
   "https://ch-server.onrender.com/app?val=56d0d178-7059-464c-89ef-18589c78e974",
   "https://ch-server.onrender.com/app?val=0ebe74df-dbab-421a-aae0-068ae01d6131",
   "https://ch-server.onrender.com/app?val=966389f2-eeec-46d9-90de-648fc9eb99b5",
@@ -190,6 +211,8 @@ let qr_proxy2=
   "https://ch-server.onrender.com/app?val=373aa7e3-44fc-48fd-9a74-9847e4ca1a87",
   "https://ch-server.onrender.com/app?val=32b2ed72-f2c9-4d81-990b-1820701c6663",
   "https://ch-server.onrender.com/app?val=81f11b39-ab39-40f8-8def-93b2f5aa40ea",
+  
+  Golden
   "https://ch-server.onrender.com/app?val=4e2d0c4c-7c52-4848-ae5c-4af4d2fdfecd",
   "https://ch-server.onrender.com/app?val=8e7c7154-7da2-447a-b40f-4a1e86b7a9ca",
   "https://ch-server.onrender.com/app?val=a50ed7b8-41f7-4a7a-8d81-0e8d848508ff",
@@ -200,6 +223,8 @@ let qr_proxy2=
   "https://ch-server.onrender.com/app?val=91f0abf0-1004-4401-ab02-550ba6a680a2",
   "https://ch-server.onrender.com/app?val=82e918ce-1265-4c59-8891-ef494965dab0",
   "https://ch-server.onrender.com/app?val=0e296406-2c45-46e4-abf0-c4c6e2275a4b",
+  
+  Joker
   "https://ch-server.onrender.com/app?val=c6c5d813-ea70-4711-b122-939ab2e0a0ad",
   "https://ch-server.onrender.com/app?val=d603bdd0-0892-47c7-8e65-e7979f0bf985",
   "https://ch-server.onrender.com/app?val=bfd0a70b-17b3-40e1-942a-78e0631cdb94",
@@ -220,6 +245,8 @@ let qr_proxy2=
   "https://ch-server.onrender.com/app?val=ee11b52a-fad0-4416-853b-1ec53e5d273b",
   "https://ch-server.onrender.com/app?val=5a855026-9bc0-4e1e-b60a-1534b7c4cbd1",
   "https://ch-server.onrender.com/app?val=32261c7b-9ad0-48b6-a7e0-7b841f748978",
+  
+  Danger
   "https://ch-server.onrender.com/app?val=085b9966-4c71-4c01-94d4-92d28bcacb61",
   "https://ch-server.onrender.com/app?val=2b56249d-7c15-4da4-a7c5-409b41e54f43",
   "https://ch-server.onrender.com/app?val=721b57ba-4264-40f4-80ec-7dfebad91ed4",
@@ -230,6 +257,8 @@ let qr_proxy2=
   "https://ch-server.onrender.com/app?val=d0204e03-f8b6-4cb2-a91f-65016ee4307c",
   "https://ch-server.onrender.com/app?val=a81d3b12-01c5-4be9-bc1f-a42413e3069e",
   "https://ch-server.onrender.com/app?val=7667e35c-3dc2-415f-9651-27ee5d213d16",
+  
+  Empty
   "https://ch-server.onrender.com/app?val=dcc1e596-38c4-42f7-93f5-a1fc3a44e32a",
   "https://ch-server.onrender.com/app?val=2d4d9508-7725-4910-90ef-01e22bf31bf5",
   "https://ch-server.onrender.com/app?val=3024ed51-6254-4f55-a362-b1692ed07fc2",
@@ -245,6 +274,8 @@ let qr_proxy2=
   "https://ch-server.onrender.com/app?val=70eb259e-efb3-4b83-820f-2890c2283c48",
   "https://ch-server.onrender.com/app?val=0b8fa7d8-c91d-4715-a62d-20fb76b5a6b6",
   "https://ch-server.onrender.com/app?val=b16337a9-68df-4b50-890d-6ab1b1f27646",
+  
+  Funny
   "https://ch-server.onrender.com/app?val=edc0422e-8223-4284-9d63-60c2d9202bb5",
   "https://ch-server.onrender.com/app?val=5aaf6249-1859-418a-9424-bb3776d3dd99",
   "https://ch-server.onrender.com/app?val=585dbbab-408c-4bc5-926a-2801dc7f36f1",
@@ -270,6 +301,8 @@ let qr_proxy2=
   "https://ch-server.onrender.com/app?val=b8db2dae-4675-4bde-b756-076cbdf6a210",
   "https://ch-server.onrender.com/app?val=43387e42-b13b-4b1e-bddc-53546881a47f",
   "https://ch-server.onrender.com/app?val=14e6d78f-6d01-43c0-a8f7-a7a15019a62d",
+  
+  Hints
   "https://ch-server.onrender.com/app?val=12519e65-ee28-4348-b91e-5fa3ad23f639",
   "https://ch-server.onrender.com/app?val=4ec75a2f-2572-4c8b-a731-eab87110daa2",
   "https://ch-server.onrender.com/app?val=a2e7b055-df97-49f4-a807-4a827b952cfe",
@@ -285,6 +318,8 @@ let qr_proxy2=
   "https://ch-server.onrender.com/app?val=77811e3b-cc0b-4de2-82ee-a1a5f81772a2",
   "https://ch-server.onrender.com/app?val=cab63508-01aa-4a0d-a681-40348d26dc0a",
   "https://ch-server.onrender.com/app?val=5556ae01-d2bb-4ad0-93e7-3c8781d59618",
+  
+  Jackpots
   "https://ch-server.onrender.com/app?val=5e6658ee-5b4b-4b5e-94da-bcddc9e88d3d",
   "https://ch-server.onrender.com/app?val=8a2094d9-6ea7-4d7b-ad7c-02baed739ab6",
   "https://ch-server.onrender.com/app?val=90e494ca-b2ec-4ca9-9957-59cfcdb6a6fa",
@@ -322,12 +357,16 @@ app.listen(port, () => {
   app.get('/app',function(req,res){
     res.sendFile(path.join(__dirname+'/index.html'));
   })
+  app.get('/user',function(req,res){
+    res.sendFile(path.join(__dirname+'/userdet.html'));
+  })
 
 
 
   app.post('/api/adduser',async function(req,res){
 
     let user_num=req.body.user_num
+    let user_roll=req.body.user_roll
     console.log(user_num)
     let user_id=await sha1(user_num)
     console.log(user_id)
@@ -337,10 +376,116 @@ app.listen(port, () => {
     })
     const db = getDatabase();
     const updates = {};
-    updates[`User_DB/${user_id}`] = {"qs":[1000]};
+    updates[`User_DB/${user_id}`] = {"qs":[1000],"email":user_roll};
     update(ref(db), updates);
 
   })
+
+// add db data -----
+  app.get('/api/db1',async function(req,res){
+
+    //let user_num=req.body.user_num
+    //console.log(user_num)
+    //let user_id=await sha1(user_num)
+    //console.log(user_id)
+    /*
+    res.send({
+        "user_num":user_num,
+        "user_id":user_id
+    })*/
+    res.send('done')
+    
+    const db = getDatabase();
+    const updates = {};
+    updates[`qrr_DB/`] = [
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      {"q_left":3,"q_tot":3,"q_type":1},
+      
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+      {"q_left":3,"q_tot":3,"q_type":2},
+
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      {"q_left":2,"q_tot":2,"q_type":3},
+      
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+      {"q_left":2,"q_tot":2,"q_type":4},
+
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+      {"q_left":1,"q_tot":1,"q_type":5},
+
+    ];
+    update(ref(db), updates);
+
+  })
+
+// -----
+
   app.post('/api',async function(req,res){
     console.log('came')
     let User_ID=req.body.user_ID
@@ -349,12 +494,73 @@ app.listen(port, () => {
     let qr_id = qr_proxy2.indexOf(qr_id_proxy);
     console.log(qr_id)
 
+    if (qr_id>=56 && qr_id<=70){
+     // type.innerHTML="Empty Question"
+      //points.innerHTML="5 pts"
+      let Ques_Curr_Link="https://ik.imagekit.io/hrhrhr/CH/live/empty/empty2.png"
+      let SendObj={
+        "UserID":User_ID,
+        "QR_ID":qr_id,
+        "Q_Link":Ques_Curr_Link,
+        "qr_status":"1",
+        "question-status":"2"
+      }
+
+      res.send(SendObj)
+    }
+    else if (qr_id>=71 && qr_id<=95){
+     // type.innerHTML="Funny Question"
+      //points.innerHTML="5 pts"
+      let Ques_Curr_Link="https://ik.imagekit.io/hrhrhr/CH/live/empty/no-questions2.jpg"
+      let SendObj={
+        "UserID":User_ID,
+        "QR_ID":qr_id,
+        "Q_Link":Ques_Curr_Link,
+        "qr_status":"1" ,
+        "question-status":"2"
+      }
+
+      res.send(SendObj)
+    }
+    else if (qr_id>=96 && qr_id<=110){
+    //  type.innerHTML="Hint Question"
+    //  points.innerHTML="5 pts"
+      let Ques_Curr_Link="https://ik.imagekit.io/hrhrhr/CH/live/empty/no-questions.jpg"
+      let SendObj={
+        "UserID":User_ID,
+        "QR_ID":qr_id,
+        "Q_Link":Ques_Curr_Link,
+       
+        "qr_status":"1" ,
+        "question-status":"2"
+      }
+
+      res.send(SendObj)
+    }
+    else if (qr_id>=111 && qr_id<=130){
+    //  type.innerHTML="Jackpot Question"
+     // points.innerHTML="5 pts"
+      let Ques_Curr_Link="https://ik.imagekit.io/hrhrhr/CH/live/empty/no-questions3.jpg"
+      let SendObj={
+        "UserID":User_ID,
+        "QR_ID":qr_id,
+        "Q_Link":Ques_Curr_Link,
+       
+        "qr_status":"1" ,
+        "question-status":"2"
+      }
+
+      res.send(SendObj)
+    }
+    else{
+    
+    }
     
     //let qr_id=qr_proxy[qr_id_proxy]
    
 
     const dbRef = ref(getDatabase());
-    get(child(dbRef, `QR_DB/${qr_id}/q_left`)).then((snapshot) => {
+    get(child(dbRef, `qrr_DB/${qr_id}/q_left`)).then((snapshot) => {
       if (snapshot.exists()) {
         //console.log(snapshot.val());
         let Q_left=snapshot.val()
@@ -381,25 +587,29 @@ app.listen(port, () => {
       }
       if ( qthere ==0){
      // console.log('False')
-     get(child(dbRef, `QR_DB/${qr_id}`)).then((snapshot) => {
+     get(child(dbRef, `qrr_DB/${qr_id}`)).then((snapshot) => {
       if (snapshot.exists()) {
 
         let QR_Det =  snapshot.val()
         let Ques_tot=QR_Det["q_tot"]
-        let Ques_Curr_Link=QR_Det["q_links"][Ques_tot - Q_left ]      
+        
+        
+        let ques_n=[Ques_tot - Q_left+1]      
+        let Ques_Curr_Link="https://ik.imagekit.io/hrhrhr/CH/live/"+qr_id+"/q"+ques_n+".png"
         let SendObj={
           "UserID":User_ID,
           "QR_ID":qr_id,
           "Q_Link":Ques_Curr_Link,
-          "Q_tot":Ques_tot,
-          "qr_status":"1" 
+          "Q_type":QR_Det["q_type"],
+          "qr_status":"1" ,
+          "question-status":"1"
         }
 
         res.send(SendObj)
         console.log("qr code has questions and user has not picked this yet")
         const db = getDatabase();
         const updates = {};
-        updates[ `QR_DB/${qr_id}/q_left`] = Q_left-1;
+        updates[ `qrr_DB/${qr_id}/q_left`] = Q_left-1;
         updates[`User_DB/${User_ID}/qs/${arr.length}`] = parseInt(qr_id);
         update(ref(db), updates);
 

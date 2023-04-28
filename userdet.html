@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding User Details</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "headingOne" >
+      <p style="margin: auto;">Circuit Hunt</p>
+    </div>
+
+    <div class="form">
+    <p>Enter Email Id</p>
+    <br></br>
+    <input type="email" name="mobile-num" id="mobile-num">
+    <br></br>
+    <p>Enter Roll Number</p>
+    <br></br>
+    <input type="text" name="roll-num" id="roll-num">
+    <br></br>
+    <button id="submit-but">Submit</button>
+    </div>
+    
+    <div class="finText">
+      <p id="msg"></p>
+    </div>
+
+
+    <script>
+        let submit=document.getElementById("submit-but")
+        
+        submit.addEventListener('click',(e)=>{
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        let mobile=document.getElementById("mobile-num")
+        let roll=document.getElementById("roll-num")
+        var raw = JSON.stringify({
+          "user_num": mobile.value,
+          "user_roll": roll.value,
+
+        });
+        
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+        };
+        
+        fetch("http://localhost:3000/api/adduser", requestOptions)
+          .then(response => response.json())
+          .then(result =>{
+            console.log(result)
+            localStorage.setItem("user-id", result["user_id"]);
+          })
+        })
+    </script>
+</body>
+
+</html>
