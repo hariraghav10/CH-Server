@@ -602,7 +602,9 @@ app.listen(port, () => {
           "Q_Link":Ques_Curr_Link,
           "Q_type":QR_Det["q_type"],
           "qr_status":"1" ,
-          "question-status":"1"
+          "question-status":"1",
+          "qr-id":qr_id,
+          "question-num":ques_n
         }
 
         res.send(SendObj)

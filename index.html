@@ -38,7 +38,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const myParam = urlParams.get('val');
         if(id==null){
-        localStorage.setItem("user-id", "bac710e416fa7eca77cbd587113ac94be2690963");
+        console.log('not an user')
         }
         else{
           console.log(id)
@@ -238,7 +238,7 @@ else{
            
             if(detail["qr_status"]=="1"){
                 questionimage.src=detail["Q_Link"]
-                msg.innerHTML="Hurray !! You got a Question"
+                msg.innerHTML="Hurray !! You got a Question : "+detail["qr-id"]+"."+detail["question-num"]
             
             if(detail["question-status"]=="2"){
                 questionimage.src=detail["Q_Link"]
