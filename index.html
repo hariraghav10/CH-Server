@@ -38,7 +38,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const myParam = urlParams.get('val');
         if(id==null){
-        console.log('not an user')
+          localStorage.setItem("user-id", "123");
         }
         else{
           console.log(id)
