@@ -53,7 +53,7 @@
           redirect: 'follow'
         };
         
-        fetch("http://localhost:3000/api/adduser", requestOptions)
+        fetch("/api/adduser", requestOptions)
           .then(response => response.json())
           .then(result =>{
             console.log(result)
