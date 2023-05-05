@@ -53,10 +53,10 @@
           redirect: 'follow'
         };
         
-        fetch("/api/adduser", requestOptions)
+        fetch("http://localhost:3000/api/adduser", requestOptions)
           .then(response => response.json())
           .then(result =>{
-            console.log(result)
+          //  console.log(result)
             localStorage.setItem("user-id", result["user_id"]);
           })
         })
