@@ -5,7 +5,8 @@ import cors from 'cors'
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, child, push, update, get } from "firebase/database";
 import sha1 from 'sha1'
-
+import * as dotenv from "dotenv";
+dotenv.config()
 const app = express()
 app.use(express.json()) 
 const __filename = fileURLToPath(import.meta.url);
@@ -16,13 +17,13 @@ app.use(cors());
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBbyYRiHKLpfLz56qGtXgGy9mOzbj3vmeE",
-    authDomain: "circuit-hunt.firebaseapp.com",
-    databaseURL: "https://circuit-hunt-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "circuit-hunt",
-    storageBucket: "circuit-hunt.appspot.com",
-    messagingSenderId: "958809103063",
-    appId: "1:958809103063:web:353e3152ed7f23a283ae92"
+    apiKey:process.env.apiKey,
+    authDomain:process.env.authDomain,
+    databaseURL: process.env.databaseURL,
+    projectId: process.env.projectId,
+    storageBucket: process.env.storageBucket,
+    messagingSenderId: process.env.messagingSenderId,
+    appId: process.env.appId
   };
 
 const ap = initializeApp(firebaseConfig);
