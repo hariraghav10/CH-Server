@@ -71,9 +71,7 @@ app.get('/api1/status',async function(req,res){
     let status=parseInt(req.query.status)
     const dbRef = getDatabase();
     const updates = {};
-    updates[`charging/0/`] = {
-        "chid":"63bd39",
-        "status":status};
+    updates[`chargingseq/CS0003/EVSE001/status`] =status;
     //console.log(ref(db))
     update(ref(dbRef), updates);
     res.send("send"+status);
